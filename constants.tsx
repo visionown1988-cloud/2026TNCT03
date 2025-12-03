@@ -1,4 +1,4 @@
-import { Home, ScrollText, Palmtree, MapPin, Car, Info } from 'lucide-react';
+import { Home, ScrollText, Landmark, MapPin, Car } from 'lucide-react';
 import { NavItem } from './types';
 
 export const APP_NAME = "2026大桃園盃全國象棋團體錦標賽";
@@ -9,7 +9,7 @@ export const HERO_IMAGE_URL = "https://www.dropbox.com/scl/fi/o3csletc5pzijni0kg
 export const NAV_ITEMS: NavItem[] = [
   { id: 'home', label: '首頁', path: '/', icon: Home },
   { id: 'rules', label: '比賽辦法', path: '/rules', icon: ScrollText },
-  { id: 'culture', label: '藝文資訊', path: '/culture', icon: Palmtree },
+  { id: 'culture', label: '藝文資訊', path: '/culture', icon: Landmark },
   { id: 'food', label: '美食攻略', path: '/food', icon: MapPin },
   { id: 'traffic', label: '交通資訊', path: '/traffic', icon: Car },
 ];

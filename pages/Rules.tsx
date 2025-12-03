@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, CheckCircle, AlertTriangle, Trophy, Clock, MapPin, Users } from 'lucide-react';
+import { CheckCircle, AlertTriangle, Trophy, Clock, MapPin, Users, FileText } from 'lucide-react';
 
 const SectionTitle: React.FC<{ title: string; icon?: React.ReactNode }> = ({ title, icon }) => (
   <h2 className="flex items-center gap-3 text-2xl md:text-3xl font-serif font-bold text-xiangqi-red border-b-2 border-xiangqi-gold pb-2 mb-6 mt-12 first:mt-0">

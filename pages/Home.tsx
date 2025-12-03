@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
-import { ScrollText, Palmtree, MapPin, Car, ArrowRight } from 'lucide-react';
+import { ScrollText, Landmark, MapPin, Car } from 'lucide-react';
 
 interface QuickAccessProps {
   to: string;
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
               label="藝文資訊"
               enLabel="Culture"
               colorClass="bg-gradient-to-br from-neutral-700 to-neutral-900"
-              icon={<Palmtree size={36} />}
+              icon={<Landmark size={36} />}
             />
 
             <QuickAccessCard 

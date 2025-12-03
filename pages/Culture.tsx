@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, MapPin, Building, Landmark, Palmtree, Plane, Droplets, Mountain } from 'lucide-react';
+import { ChevronDown, ChevronUp, MapPin, Building, Landmark, Droplets, Mountain } from 'lucide-react';
 
 interface Attraction {
   id: number;
