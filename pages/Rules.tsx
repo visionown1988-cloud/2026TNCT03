@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, FileText, CheckCircle, AlertTriangle, Trophy, Clock, MapPin, Users, Info } from 'lucide-react';
+import { FileText, CheckCircle, AlertTriangle, Trophy, Clock, MapPin, Users } from 'lucide-react';
 
 const SectionTitle: React.FC<{ title: string; icon?: React.ReactNode }> = ({ title, icon }) => (
   <h2 className="flex items-center gap-3 text-2xl md:text-3xl font-serif font-bold text-xiangqi-red border-b-2 border-xiangqi-gold pb-2 mb-6 mt-12 first:mt-0">
@@ -22,7 +22,7 @@ const Rules: React.FC = () => {
       <div className="bg-white p-8 md:p-12 rounded-lg shadow-xl border-t-4 border-xiangqi-red">
         
         {/* 1. Basic Info */}
-        <SectionTitle title="一、賽事資訊" icon={<Info />} />
+        <SectionTitle title="一、賽事資訊" icon={<Users />} />
         <div className="grid md:grid-cols-2 gap-6 text-gray-700 leading-relaxed bg-gray-50 p-6 rounded-lg">
           <div className="space-y-3">
              <p><span className="font-bold text-black flex items-center gap-2"><MapPin size={16}/> 指導機關：</span> 桃園市市政府</p>
@@ -231,7 +231,7 @@ const Rules: React.FC = () => {
                 <li>賽前應確認先後手、計時鐘及成績分數；賽後勝方或和局方需送對陣單並簽名確認。未確認導致登錄錯誤不得異議。</li>
                 <li><span className="text-red-600 font-bold">手機規範：</span>比賽開始時需關閉手機並置於賽桌上。對弈中手機響起、螢幕亮者、接聽電話一律判負。上廁所不得攜帶手機。</li>
                 <li>嚴禁高段低報，違者依規定取消資格、追回獎勵。</li>
-                <li>遇棋規問題：按暫停 {'>'} 維持現狀 {'>'} 舉手請裁判。</li>
+                <li>遇棋規問題：先按暫停，維持現狀，再舉手請裁判。</li>
                 <li>凡讓棋、蓄意媾和或無故未完成賽事者，取消資格以零分計算。</li>
                 <li>遲到逾 10 分鐘者，直接判負。</li>
                 <li>現場免費提供礦泉水，<span className="font-bold">午餐自理</span> (註：依最新文案更新為午餐自理，原條文為含午餐請注意)。<br/><span className="text-xs text-gray-500">(備註：根據提供的文案第13點為「午餐自理」，請參賽者留意)</span></li>
