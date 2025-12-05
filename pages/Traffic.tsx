@@ -58,7 +58,7 @@ const Traffic: React.FC = () => {
             <div className="space-y-4">
              <div>
                 <span className="font-bold text-black block mb-1">【台鐵桃園站】</span>
-                <p>出站後轉乘計程車（約 15 分鐘車程）或轉乘市區公車。</p>
+                <p>出站後建議轉乘計程車（約 15 分鐘車程）或轉乘市區公車。</p>
              </div>
               <div>
                 <span className="font-bold text-black block mb-1">【高鐵桃園站】</span>

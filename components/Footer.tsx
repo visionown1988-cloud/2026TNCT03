@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               </p>
               <p className="flex items-center gap-3">
                 <span className="text-gray-500 text-sm uppercase tracking-wider min-w-[3rem]">市話</span>
-                <span>03-3700-456</span>
+                <span>03-3322-350</span>
               </p>
             </div>
           </div>
