@@ -15,14 +15,24 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           
           {/* Logo / Title */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-3 overflow-hidden">
             <NavLink to="/" className="flex items-center gap-2" onClick={closeMenu}>
-              <div className="w-10 h-10 bg-xiangqi-gold rounded-full flex items-center justify-center border-2 border-white">
+              <div className="w-10 h-10 bg-xiangqi-gold rounded-full flex-shrink-0 flex items-center justify-center border-2 border-white">
                 <span className="text-xiangqi-red font-serif font-bold text-2xl">帥</span>
               </div>
-              <span className="text-white font-serif font-bold text-lg md:text-xl tracking-widest hover:text-xiangqi-gold transition-colors">
-                {APP_NAME}
-              </span>
+              
+              {/* Responsive Title Logic */}
+              <div className="flex flex-col justify-center">
+                {/* Mobile Title (Shortened) */}
+                <span className="block md:hidden text-white font-serif font-bold text-lg tracking-wider whitespace-nowrap">
+                  2026 大桃園盃
+                </span>
+                
+                {/* Desktop Title (Full) */}
+                <span className="hidden md:block text-white font-serif font-bold text-xl tracking-widest hover:text-xiangqi-gold transition-colors">
+                  {APP_NAME}
+                </span>
+              </div>
             </NavLink>
           </div>
 
@@ -49,7 +59,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 flex md:hidden ml-auto">
             <button
               onClick={toggleMenu}
               type="button"
@@ -64,7 +74,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-red-900 border-t border-red-800">
+        <div className="md:hidden bg-red-900 border-t border-red-800 absolute w-full left-0 shadow-xl">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {NAV_ITEMS.map((item) => (
               <NavLink
