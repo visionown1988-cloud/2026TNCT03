@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
-import { ScrollText, Landmark, MapPin, Car } from 'lucide-react';
+import { ScrollText, Landmark, MapPin, Car, Mail } from 'lucide-react';
 
 interface QuickAccessProps {
   to: string;
@@ -58,9 +58,18 @@ const Home: React.FC = () => {
 
       {/* Quick Access Section */}
       <div className="relative z-10 -mt-8 mb-16">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Grid Layout: 5 columns for desktop */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             
+            <QuickAccessCard 
+              to="/invitation" 
+              label="誠摯邀請"
+              enLabel="Invitation"
+              colorClass="bg-gradient-to-br from-yellow-600 to-yellow-800"
+              icon={<Mail size={36} />}
+            />
+
             <QuickAccessCard 
               to="/rules" 
               label="比賽辦法"

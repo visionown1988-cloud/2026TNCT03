@@ -7,6 +7,7 @@ import Rules from './pages/Rules';
 import Culture from './pages/Culture';
 import Food from './pages/Food';
 import Traffic from './pages/Traffic';
+import Invitation from './pages/Invitation';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/invitation" element={<Invitation />} />
             <Route path="/rules" element={<Rules />} />
             <Route path="/culture" element={<Culture />} />
             <Route path="/food" element={<Food />} />
